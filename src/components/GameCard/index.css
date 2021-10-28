@@ -1,0 +1,76 @@
+/* card height is width x 1,5735 */
+
+.gameCard {
+  width: 260px;
+  height: 409.11px;
+  border: 3px orange solid;
+  border-radius: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.gameCard section {
+  width: 100%;
+}
+
+.cardVisual {
+  height: 70%;
+}
+
+.cardVisual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.playValue {
+  height: 15%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+}
+
+.playValue p {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.battleStat {
+  width: 25%;
+  border-radius: 0 100% 100% 0;
+  background-color: red;
+  color: white;
+}
+
+.summonStat {
+  width: 25%;
+  border-radius: 100% 0 0 100%;
+  background-color: green;
+  color: white;
+}
+
+.rarityStat {
+  width: 50%;
+  color: black;
+}
+
+.charaName {
+  height: 15%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charaName p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
