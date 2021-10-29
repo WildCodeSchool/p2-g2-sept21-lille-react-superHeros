@@ -1,0 +1,34 @@
+.HomeNews {
+  display: block;
+  margin: auto auto;
+  padding-bottom: 10vh;
+  background-color: yellow;
+  width: 70vw;
+  height: 50vh;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 25px yellow;
+}
+
+@media only screen and (min-width: 800px) {
+  .HomeNews {
+    display: block;
+    margin: auto auto;
+    padding-bottom: 10vh;
+    background-color: yellow;
+    width: 80vw;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .articleList {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+}
