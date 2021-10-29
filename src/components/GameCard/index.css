@@ -1,12 +1,59 @@
 /* card height is width x 1,5735 */
+.cardXL {
+  width: 260px;
+  height: calc(260px * 1.5735);
+  font-size: 100%;
+}
+
+.cardL {
+  width: 240px;
+  height: calc(240px * 1.5735);
+  font-size: 95%;
+}
+
+.cardM {
+  width: 220px;
+  height: calc(220px * 1.5735);
+  font-size: 90%;
+}
+
+.cardS {
+  width: 200px;
+  height: calc(200px * 1.5735);
+  font-size: 85%;
+}
+
+.cardXS {
+  width: 180px;
+  height: calc(180px * 1.5735);
+  font-size: 80%;
+}
+
+.commonCard {
+  border: 5px white solid;
+}
+
+.rareCard {
+  border: 5px blue solid;
+}
+
+.ultraCard {
+  border: 5px green solid;
+}
+
+.epicCard {
+  border: 5px orange solid;
+}
+
+.legendaryCard {
+  border: 5px purple solid;
+}
 
 .gameCard {
-  width: 260px;
-  height: 409.11px;
-  border: 3px orange solid;
   border-radius: 15px;
   overflow: hidden;
   box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
 .gameCard section {
@@ -30,7 +77,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
+  background-color: #ffb400;
 }
 
 .playValue p {
@@ -61,7 +108,7 @@
 
 .charaName {
   height: 15%;
-  background-color: blue;
+  background-color: #2d4059;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,5 +119,5 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: white;
+  color: #ffb400;
 }
