@@ -90,20 +90,27 @@
 .battleStat {
   width: 25%;
   border-radius: 0 100% 100% 0;
-  background-color: red;
+  background-color: rgba(121, 9, 9, 1);
   color: white;
 }
 
 .summonStat {
   width: 25%;
   border-radius: 100% 0 0 100%;
-  background-color: green;
+  background-color: rgba(16, 121, 9, 1);
   color: white;
 }
 
 .rarityStat {
   width: 50%;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rarityStar {
+  width: 40%;
 }
 
 .charaName {
