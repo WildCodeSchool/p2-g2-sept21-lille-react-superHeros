@@ -6,7 +6,7 @@ const ArticleHomeBlog = ({ title, image }) => {
   return (
     <div className="newsArticles">
       <h2>{title}</h2>
-      <img src={image} alt="images 1" />
+      <img src={image} alt="imageCard" />
     </div>
   );
 };
