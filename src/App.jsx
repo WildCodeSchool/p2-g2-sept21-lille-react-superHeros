@@ -1,11 +1,11 @@
 import HomeBlog from './Components/HomeBlog';
-import WILDHEROES from './Images/WILDHEROES.png';
+import WildHeroes from './Images/WildHeroes.png';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <img className="logo" src={WILDHEROES} alt="WildHeroes" />
+      <img className="logo" src={WildHeroes} alt="WildHeroes" />
       <HomeBlog />
     </div>
   );
