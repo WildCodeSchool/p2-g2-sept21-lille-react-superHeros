@@ -12,9 +12,8 @@
   .HomeNews {
     display: block;
     padding-bottom: 2%;
-    margin: auto auto;
     background-color: #ffb400;
-    width: 80%;
+    width: 86%;
     border-radius: 10px;
     text-align: center;
   }
@@ -22,8 +21,8 @@
   .articleList {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    height: 20vh;
-    width: 80vw;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
   }
 }

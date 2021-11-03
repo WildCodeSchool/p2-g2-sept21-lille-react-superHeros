@@ -1,8 +1,8 @@
 import './Index.css';
 import ArticleHomeBlog from '../ArticleHomeBlog/index';
-import fight from './Images/fight.jpg';
-import cardsgame from './Images/cardsgame.jpg';
-import héroslist from './Images/héroslist.jpg';
+import fight from './Images/fight.png';
+import cardsgame from './Images/cardsgame.png';
+import heroeslist from './Images/heroeslist.png';
 
 function HomeBlog() {
   return (
@@ -10,7 +10,7 @@ function HomeBlog() {
       <h1> News </h1>
       <div className="articleList">
         <ArticleHomeBlog title="Enter the fight" image={fight} />
-        <ArticleHomeBlog title="Find all our cards" image={héroslist} />
+        <ArticleHomeBlog title="Find all our cards" image={heroeslist} />
         <ArticleHomeBlog title="Next card releases" image={cardsgame} />
       </div>
     </section>
