@@ -1,6 +1,6 @@
-import './components/slider/Slider.css';
-import ImageSlider from './components/slider/ImageSlider';
-import SliderData from './components/slider/SliderData';
+import './Components/slider/Slider.css';
+import ImageSlider from './Components/slider/ImageSlider';
+import SliderData from './Components/slider/SliderData';
 
 function App() {
   return <ImageSlider slides={SliderData} />;

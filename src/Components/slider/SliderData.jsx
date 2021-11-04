@@ -7,27 +7,12 @@ import ImageSix from './ImgSlider/Card6.png';
 import ImageSeven from './ImgSlider/Card7.png';
 
 const SliderData = [
-  {
-    image: ImageOne,
-  },
-  {
-    image: ImageTwo,
-  },
-  {
-    image: ImageThree,
-  },
-  {
-    image: ImageFour,
-  },
-  {
-    image: ImageFive,
-  },
-  {
-    image: ImageSix,
-  },
-  {
-    image: ImageSeven,
-  },
+  ImageOne,
+  ImageTwo,
+  ImageThree,
+  ImageFour,
+  ImageFive,
+  ImageSix,
+  ImageSeven,
 ];
-
 export default SliderData;
