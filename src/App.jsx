@@ -1,5 +1,12 @@
+import React from 'react';
+import Footer from './Components/Footer/Index';
+
 function App() {
-  return <div />;
+  return (
+    <>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
