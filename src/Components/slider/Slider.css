@@ -12,7 +12,7 @@
   border-radius: 15px;
 }
 
-.right-arrow {
+.rightArrow {
   position: absolute;
   top: center;
   right: 2vh;
@@ -23,7 +23,7 @@
   user-select: none;
 }
 
-.left-arrow {
+.leftArrow {
   position: absolute;
   top: center;
   left: 2vh;
