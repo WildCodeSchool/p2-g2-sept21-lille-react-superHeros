@@ -77,7 +77,7 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-color: #ffb400;
+  background-color: var(--secondary-color);
 }
 
 .playValue p {
@@ -115,7 +115,7 @@
 
 .charaName {
   height: 15%;
-  background-color: #2d4059;
+  background-color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,6 +126,6 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: #ffb400;
+  color: var(--secondary-color);
   text-align: center;
 }
