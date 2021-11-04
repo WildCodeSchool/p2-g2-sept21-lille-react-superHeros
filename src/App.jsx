@@ -4,9 +4,7 @@ import Footer from './Components/Footer/Index';
 function App() {
   return (
     <>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   );
 }
