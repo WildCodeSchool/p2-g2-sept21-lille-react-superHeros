@@ -6,7 +6,7 @@ import heroeslist from './Images/heroeslist.png';
 
 function HomeBlog() {
   return (
-    <section className="HomeNews">
+    <section className="homeNews">
       <h1> News </h1>
       <div className="articleList">
         <ArticleHomeBlog title="Enter the fight" image={fight} />
