@@ -18,15 +18,15 @@ function NavBar() {
   return (
     <>
       <Link to="/" className="yellowBars" onClick={showSidebar}>
-        <img src={YellowBars} alt="" />
+        <img src={YellowBars} alt="Yellow Bars" />
       </Link>
 
       <nav className={sidebar ? 'navMenuActive' : 'navBar'}>
         <Link to="/" className="menuLogo" onClick={showSidebar}>
-          <img src={NavbarLogo} alt="" />
+          <img src={NavbarLogo} alt="Wild Heroes" />
         </Link>
         <div className="burgerImg">
-          <img src={WildHeroesBurger} alt="" />
+          <img src={WildHeroesBurger} alt="Wild Heroes" />
         </div>
         <Link to="/" className="menuBars">
           <img src={BlackHome} alt="Home" />
