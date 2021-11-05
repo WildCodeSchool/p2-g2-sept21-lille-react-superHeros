@@ -17,7 +17,7 @@
   top: center;
   right: 2vh;
   font-size: 3rem;
-  color: border #ffb400 1px;
+  color: #ffb400;
   z-index: 10;
   cursor: pointer;
   user-select: none;
@@ -28,10 +28,18 @@
   top: center;
   left: 2vh;
   font-size: 3rem;
-  color: black;
+  color: #ffb400;
   z-index: 10;
   cursor: p;
   user-select: none;
+}
+
+.rightArrow:active {
+  color: #2d4059;
+}
+
+.leftArrow:active {
+  color: #2d4059;
 }
 
 .slide {
