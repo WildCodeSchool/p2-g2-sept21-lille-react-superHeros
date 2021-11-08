@@ -8,6 +8,8 @@ import News from './Components/News';
 import NavBar from './Components/Navbar';
 import './reset.css';
 import './App.css';
+import Footer from './Components/Footer/Index';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/rules" component={Rules} />
         <Route path="/news" component={News} />
       </Switch>
+      <Footer />
     </>
   );
 }
