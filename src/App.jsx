@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       {heroId.map((data) => {
-        return <GameCard heroApi={data} key={data} cardSize="S" />;
+        return <GameCard heroApi={data} key={data} cardSize="XS" />;
       })}
     </div>
   );
