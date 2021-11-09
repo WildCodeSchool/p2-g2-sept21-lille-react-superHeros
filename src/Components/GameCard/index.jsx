@@ -9,9 +9,9 @@ import star5 from './cardsIcons/etoile5.svg';
 import './index.css';
 
 const GameCard = ({ heroApi, cardSize }) => {
-  const [basicInfo, setBasicInfo] = useState([]);
-  const [stats, setStats] = useState([]);
-  const [visual, setVisual] = useState([]);
+  const [basicInfo, setBasicInfo] = useState({});
+  const [stats, setStats] = useState({});
+  const [visual, setVisual] = useState({});
   const [borderColor, setBorderColor] = useState('');
   const [rarity, setRarity] = useState('');
 
@@ -19,21 +19,11 @@ const GameCard = ({ heroApi, cardSize }) => {
     axios
       .get(`https://www.superheroapi.com/api.php/10226516634046414/${heroApi}`)
       .then((resp) => resp.data)
-      .then((data) => setBasicInfo(data));
-  }, []);
-
-  useEffect(() => {
-    axios
-      .get(`https://www.superheroapi.com/api.php/10226516634046414/${heroApi}`)
-      .then((resp) => resp.data)
-      .then((data) => setStats(data.powerstats));
-  }, []);
-
-  useEffect(() => {
-    axios
-      .get(`https://www.superheroapi.com/api.php/10226516634046414/${heroApi}`)
-      .then((resp) => resp.data)
-      .then((data) => setVisual(data.image));
+      .then((data) => {
+        setBasicInfo(data);
+        setVisual(data.image);
+        setStats(data.powerstats);
+      });
   }, []);
 
   const rarityLevel = Math.round(
@@ -50,13 +40,13 @@ const GameCard = ({ heroApi, cardSize }) => {
     if (rarityLevel >= 80) {
       setBorderColor('legendaryCard');
       setRarity(star5);
-    } else if (rarityLevel >= 60 && rarityLevel < 80) {
+    } else if (rarityLevel >= 60) {
       setBorderColor('epicCard');
       setRarity(star4);
-    } else if (rarityLevel >= 40 && rarityLevel < 60) {
+    } else if (rarityLevel >= 40) {
       setBorderColor('ultraCard');
       setRarity(star3);
-    } else if (rarityLevel >= 20 && rarityLevel < 40) {
+    } else if (rarityLevel >= 20) {
       setBorderColor('rareCard');
       setRarity(star2);
     } else {
