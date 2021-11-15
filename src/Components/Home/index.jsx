@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeCarousel from '../Carousel';
+import './index.css';
 
 function Home() {
   return (
