@@ -8,7 +8,7 @@ import BlackCollection from './Logo/BlackCollection.png';
 import BlackRules from './Logo/BlackRules.png';
 import BlackNews from './Logo/BlackNews.png';
 import YellowBars from './Logo/YellowBars.png';
-import './Index.css';
+import './index.css';
 
 function NavBar() {
   const [sidebar, setSidebar] = useState(false);
@@ -20,11 +20,10 @@ function NavBar() {
       <Link to="/" className="yellowBars" onClick={showSidebar}>
         <img src={YellowBars} alt="Yellow Bars" />
       </Link>
-
       <nav className={sidebar ? 'navMenuActive' : 'navBar'}>
-        <Link to="/" className="menuLogo" onClick={showSidebar}>
+        <button type="button" className="menuLogo" onClick={showSidebar}>
           <img src={NavbarLogo} alt="Wild Heroes" />
-        </Link>
+        </button>
         <div className="burgerImg">
           <img src={WildHeroesBurger} alt="Wild Heroes" />
         </div>
