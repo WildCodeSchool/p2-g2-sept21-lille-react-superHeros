@@ -3,7 +3,7 @@ import React from 'react';
 function Collection() {
   return (
     <div>
-      <p>guvibgh vnhrnfuvoij nhuvrunvj nhuvgirr</p>
+      <p>Collection</p>
     </div>
   );
 }

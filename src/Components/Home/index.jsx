@@ -4,7 +4,7 @@ import './index.css';
 function Home() {
   return (
     <div className="home">
-      <p>lirhyelkigufliejlkeji</p>
+      <p>Home</p>
     </div>
   );
 }
