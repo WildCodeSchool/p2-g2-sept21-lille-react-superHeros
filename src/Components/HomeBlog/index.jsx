@@ -1,4 +1,4 @@
-import './Index.css';
+import './index.css';
 import ArticleHomeBlog from '../ArticleHomeBlog/index';
 import fight from './Images/fight.png';
 import cardsgame from './Images/cardsgame.png';
