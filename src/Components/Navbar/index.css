@@ -34,7 +34,8 @@
   }
 
   .menuBars:hover {
-    background-color: var(--sub-color);
+    background-color: black;
+    color: var(--secondary-color);
   }
 
   nav.navMenuActive {
@@ -120,7 +121,8 @@
   }
 
   .menuBars:hover {
-    background-color: var(--sub-color);
+    background-color: black;
+    color: var(--secondary-color);
   }
 
   a {
