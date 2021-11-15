@@ -11,3 +11,7 @@ body {
   background-color: var(--main-color);
   font-family: var(--font);
 }
+
+.navHome {
+  display: flex;
+}

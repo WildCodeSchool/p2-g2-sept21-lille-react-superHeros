@@ -1,9 +1,10 @@
 import React from 'react';
+import './index.css';
 
 function Home() {
   return (
-    <div>
-      <p>Home</p>
+    <div className="home">
+      <p>lirhyelkigufliejlkeji</p>
     </div>
   );
 }

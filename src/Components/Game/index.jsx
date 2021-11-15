@@ -3,7 +3,7 @@ import React from 'react';
 function Game() {
   return (
     <div>
-      <p>Game</p>
+      <p>esdrfgtyh gyuhujio ug h</p>
     </div>
   );
 }
