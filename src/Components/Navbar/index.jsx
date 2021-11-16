@@ -19,10 +19,6 @@ function NavBar() {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
 
-  // const [yellowIcons, setYellowIcons] = useState(false);
-  // const showYellowIcons = () => setYellowIcons(true);
-  // const hideYellowIcons = () => setYellowIcons(false);
-
   const [yellowHome, setYellowHome] = useState(false);
   const showYellowHome = () => setYellowHome(true);
   const hideYellowHome = () => setYellowHome(false);
