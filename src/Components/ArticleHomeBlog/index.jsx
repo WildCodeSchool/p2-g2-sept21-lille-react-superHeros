@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import './Index.css';
+import './index.css';
 
 const ArticleHomeBlog = ({ title, image }) => {
   return (

@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { NavLink } from 'react-router-dom';
 import './index.css';
+import WildLogo from '../WildLogo';
 import Expac from './NewsImages/Expac.png';
 import Cards from './NewsImages/Cards.png';
 import Melee from './NewsImages/Melee.png';
@@ -8,6 +10,9 @@ import Melee from './NewsImages/Melee.png';
 function News() {
   return (
     <div className="articlePage">
+      <div>
+        <WildLogo />
+      </div>
       <NavLink to="/newspage1" className="articleBlocs firstArticleBlocs">
         <h3>
           The new Wild Heroes expansion is upon us! Check it out on
