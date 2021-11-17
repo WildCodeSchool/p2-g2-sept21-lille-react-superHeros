@@ -1,4 +1,5 @@
 import React from 'react';
+import WildLogo from '../WildLogo';
 import GameCard from '../GameCard';
 import './index.css';
 
@@ -11,15 +12,18 @@ const heroId = [
 
 function Collection() {
   return (
-    <ul className="collecDisplay">
-      {heroId.map((data) => {
-        return (
-          <li className="cardDisplay">
-            <GameCard heroApi={data} key={data} cardSize="L" />
-          </li>
-        );
-      })}
-    </ul>
+    <div>
+      <WildLogo />
+      <ul className="collecDisplay">
+        {heroId.map((data) => {
+          return (
+            <li className="cardDisplay">
+              <GameCard heroApi={data} key={data} cardSize="L" />
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 

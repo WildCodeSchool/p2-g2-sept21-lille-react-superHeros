@@ -1,9 +1,10 @@
 import React from 'react';
+import WildLogo from '../WildLogo';
 
 function Rules() {
   return (
     <div>
-      <p>Rules</p>
+      <WildLogo />
     </div>
   );
 }
