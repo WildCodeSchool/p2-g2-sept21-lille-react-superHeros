@@ -1,9 +1,7 @@
 @media only screen and (min-width: 700px) {
   .rulesBody {
     color: var(--secondary-color);
-    width: 90%;
-
-    /* width: 100%; */
+    width: 100%;
   }
 
   .topDivLogo {
