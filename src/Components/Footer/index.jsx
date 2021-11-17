@@ -9,7 +9,8 @@ Modal.setAppElement('#root');
 
 function Footer() {
   const currentYear = new Date().getFullYear();
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [contactModalIsOpen, setContactModalIsOpen] = useState(false);
+  const [cguModalIsOpen, setCguModalIsOpen] = useState(false);
   return (
     <footer className="footerContact">
       <div className="footerContent">
@@ -18,13 +19,13 @@ function Footer() {
             <button
               className="btnContact"
               type="button"
-              onClick={() => setModalIsOpen(true)}
+              onClick={() => setContactModalIsOpen(true)}
             >
               Contact
             </button>
             <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={() => setModalIsOpen(false)}
+              isOpen={contactModalIsOpen}
+              onRequestClose={() => setContactModalIsOpen(false)}
               className="windowOpenContact"
             >
               <section className="modalHeader">
@@ -32,7 +33,7 @@ function Footer() {
                 <button
                   className="closeModal"
                   type="button"
-                  onClick={() => setModalIsOpen(false)}
+                  onClick={() => setContactModalIsOpen(false)}
                 >
                   X
                 </button>
@@ -62,14 +63,14 @@ function Footer() {
             <button
               className="btnCgu"
               type="button"
-              onClick={() => setModalIsOpen(true)}
+              onClick={() => setCguModalIsOpen(true)}
             >
               CGU
             </button>
           </section>
           <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setModalIsOpen(false)}
+            isOpen={cguModalIsOpen}
+            onRequestClose={() => setCguModalIsOpen(false)}
             className="windowOpenCgu"
           >
             <section className="modalHeader">
@@ -77,7 +78,7 @@ function Footer() {
               <button
                 className="closeModal"
                 type="button"
-                onClick={() => setModalIsOpen(false)}
+                onClick={() => setCguModalIsOpen(false)}
               >
                 X
               </button>
