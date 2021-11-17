@@ -15,6 +15,7 @@
     height: 100vh;
     background-color: var(--secondary-color);
     position: static;
+    transition: 200ms;
   }
 
   .menuLogo {
@@ -33,7 +34,8 @@
   }
 
   .menuBars:hover {
-    background-color: var(--sub-color);
+    background-color: black;
+    color: var(--secondary-color);
   }
 
   nav.navMenuActive {
@@ -48,6 +50,7 @@
     flex-direction: column;
     padding: 0;
     position: static;
+    transition: 600ms;
   }
 
   .textShow {
@@ -119,7 +122,8 @@
   }
 
   .menuBars:hover {
-    background-color: var(--sub-color);
+    background-color: black;
+    color: var(--secondary-color);
   }
 
   a {

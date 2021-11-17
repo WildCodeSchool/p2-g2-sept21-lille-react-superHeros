@@ -1,8 +1,8 @@
 import './index.css';
-import ArticleHomeBlog from '../ArticleHomeBlog/index';
+import ArticleHomeBlog from '../ArticleHomeBlog';
 import fight from './Images/fight.png';
-import cardsgame from './Images/cardsgame.png';
-import heroeslist from './Images/heroeslist.png';
+import cardsgame from './Images/cardsGame.png';
+import heroeslist from './Images/heroesList.png';
 
 function HomeBlog() {
   return (
