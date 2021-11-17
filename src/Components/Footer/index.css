@@ -41,14 +41,14 @@
   color: white;
   margin: auto;
   margin-top: 10vh;
-  width: 50vh;
-  height: 65vh;
+  width: 300px;
+  height: 450px;
   background-color: var(--main-color);
 }
 
 .modalHeader {
   position: relative;
-  margin-top: 15px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
