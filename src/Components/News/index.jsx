@@ -1,9 +1,10 @@
 import React from 'react';
+import WildLogo from '../WildLogo';
 
 function News() {
   return (
     <div>
-      <p>News</p>
+      <WildLogo />
     </div>
   );
 }
