@@ -1,5 +1,14 @@
-.carouselImg {
-  border-radius: 40px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
-  opacity: 1;
+.carouselLayout {
+  width: auto;
+  margin: 30px auto;
+}
+
+.slider-single-content {
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 700px) {
+  .carouselLayout {
+    margin: 30px auto 150px auto;
+  }
 }

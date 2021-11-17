@@ -1,4 +1,6 @@
+import React from 'react';
 import { Carousel } from '3d-react-carousal';
+import { useEffect } from 'react/cjs/react.development';
 import GameCard from '../GameCard';
 import './index.css';
 
@@ -15,12 +17,25 @@ for (let i = 0; i < 5; i += 1) {
 }
 
 const SlideCarousel = () => {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 700;
+
+  useEffect(() => {
+    window.addEventListener('resize', () => setWidth(window.innerWidth));
+  }, []);
+
   const slides = cardId.map((data) => {
-    return <GameCard heroApi={data} key={data} cardSize="XL" />;
+    return (
+      <GameCard
+        heroApi={data}
+        key={data}
+        cardSize={width < breakpoint ? 'XS' : 'XL'}
+      />
+    );
   });
 
   return (
-    <div>
+    <div className="carouselLayout">
       <Carousel slides={slides} />
     </div>
   );
