@@ -14,10 +14,12 @@
     width: 70px;
     height: 100vh;
     background-color: var(--secondary-color);
+
     position: sticky;
     top: 0;
-    transition: 200ms;
+    transition: 400ms;
     margin-bottom: -300px;
+
   }
 
   .menuLogo {
@@ -77,6 +79,8 @@
     position: absolute;
     top: 5px;
     left: 5px;
+    border: none;
+    background: none;
   }
 
   .burgerImg img {

@@ -37,9 +37,9 @@ function NavBar() {
 
   return (
     <>
-      <Link to="/" className="yellowBars" onClick={showSidebar}>
+      <button type="button" className="yellowBars" onClick={showSidebar}>
         <img src={YellowBars} alt="Yellow Bars" />
-      </Link>
+      </button>
       <nav className={sidebar ? 'navMenuActive' : 'navBar'}>
         <button type="button" className="menuLogo" onClick={showSidebar}>
           <img src={NavbarLogo} alt="Wild Heroes" />
@@ -52,6 +52,7 @@ function NavBar() {
           className="menuBars"
           onMouseEnter={showYellowHome}
           onMouseLeave={hideYellowHome}
+          onClick={showSidebar}
         >
           <img src={yellowHome ? YellowHome : BlackHome} alt="Home" />
           <p className={sidebar ? 'textShow' : 'textHide'}>Home</p>
@@ -61,6 +62,7 @@ function NavBar() {
           className="menuBars"
           onMouseEnter={showYellowGame}
           onMouseLeave={hideYellowGame}
+          onClick={showSidebar}
         >
           <img src={yellowGame ? YellowGame : BlackGame} alt="Game" />
           <p className={sidebar ? 'textShow' : 'textHide'}>Play Game</p>
@@ -70,6 +72,7 @@ function NavBar() {
           className="menuBars"
           onMouseEnter={showYellowCollection}
           onMouseLeave={hideYellowCollection}
+          onClick={showSidebar}
         >
           <img
             src={yellowCollection ? YellowCollection : BlackCollection}
@@ -82,6 +85,7 @@ function NavBar() {
           className="menuBars"
           onMouseEnter={showYellowRules}
           onMouseLeave={hideYellowRules}
+          onClick={showSidebar}
         >
           <img src={yellowRules ? YellowRules : BlackRules} alt="Rules" />
           <p className={sidebar ? 'textShow' : 'textHide'}>Rules</p>
@@ -91,6 +95,7 @@ function NavBar() {
           className="menuBars"
           onMouseEnter={showYellowNews}
           onMouseLeave={hideYellowNews}
+          onClick={showSidebar}
         >
           <img src={yellowNews ? YellowNews : BlackNews} alt="News" />
           <p className={sidebar ? 'textShow' : 'textHide'}>News</p>
