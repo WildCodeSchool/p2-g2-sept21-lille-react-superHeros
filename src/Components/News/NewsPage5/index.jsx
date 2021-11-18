@@ -1,9 +1,13 @@
 import '../index.css';
+import BackArrowBtn from '../NewsArrow';
 import Player from '../NewsImages/Player.jpg';
 
 function NewsPage5() {
   return (
     <article className="wholeArticle">
+      <div className="backArrowDiv">
+        <BackArrowBtn />
+      </div>
       <div className="articleHead">
         <h3 className="articleTitles">CARDGOD: Story of a champion</h3>
       </div>

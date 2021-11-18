@@ -1,9 +1,13 @@
 import '../index.css';
+import BackArrowBtn from '../NewsArrow';
 import Expac from '../NewsImages/Expac.png';
 
 function NewsPage1() {
   return (
     <article className="wholeArticle">
+      <div className="backArrowDiv">
+        <BackArrowBtn />
+      </div>
       <div className="articleHead">
         <h3 className="articleTitles">
           The new Wild Heroes expansion is upon us! Check it out on

@@ -1,9 +1,13 @@
 import '../index.css';
+import BackArrowBtn from '../NewsArrow';
 import BalancePatch from '../NewsImages/BalancePatch.jpeg';
 
 function NewsPage4() {
   return (
     <article className="wholeArticle">
+      <div className="backArrowDiv">
+        <BackArrowBtn />
+      </div>
       <div className="articleHead">
         <h3 className="articleTitles">
           Balance patch notes 4.3 - November 17th, 2021{' '}
