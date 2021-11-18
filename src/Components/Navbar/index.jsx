@@ -18,7 +18,6 @@ import './index.css';
 function NavBar() {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
-  // const hideSidebar = () => setSidebar(sidebar);
 
   const [yellowHome, setYellowHome] = useState(false);
   const showYellowHome = () => setYellowHome(true);
