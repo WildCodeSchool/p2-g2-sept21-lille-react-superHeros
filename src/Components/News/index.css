@@ -2,8 +2,11 @@
   /* NEWS PAGE */
 
   .articlePage {
+    width: 100%;
     display: flex;
     flex-flow: column;
+    align-items: center;
+    margin-bottom: 30px;
   }
 
   .articleBlocs {
@@ -51,6 +54,7 @@
   flex-flow: column wrap;
   align-items: center;
   width: 100vw;
+  min-height: 100vh !important;
 }
 
 .articleTitles {
@@ -165,6 +169,7 @@
 
   .wholeArticle {
     width: 100%;
+    min-height: 100vh !important;
   }
 
   .articleTitles {
