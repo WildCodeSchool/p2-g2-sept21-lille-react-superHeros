@@ -1,9 +1,13 @@
 import '../index.css';
+import BackArrowBtn from '../NewsArrow';
 import Melee from '../NewsImages/Melee.png';
 
 function NewsPage3() {
   return (
     <article className="wholeArticle">
+      <div className="backArrowDiv">
+        <BackArrowBtn />
+      </div>
       <div className="articleHead">
         <h3 className="articleTitles">
           Team up with two other players in the latest game mode available on

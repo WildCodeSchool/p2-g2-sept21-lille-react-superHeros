@@ -48,6 +48,17 @@
 
 /* SINGLE ARTICLE PAGE */
 
+.backArrowDiv {
+  width: 100%;
+  display: flex;
+  justify-self: flex-start;
+}
+
+.backArrowBtn {
+  border: none;
+  background: none;
+}
+
 .wholeArticle {
   margin: 10px;
   display: flex;

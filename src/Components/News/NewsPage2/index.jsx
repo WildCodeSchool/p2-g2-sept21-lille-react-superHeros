@@ -1,9 +1,13 @@
 import '../index.css';
+import BackArrowBtn from '../NewsArrow';
 import Cards from '../NewsImages/Cards.png';
 
 function NewsPage2() {
   return (
     <article className="wholeArticle">
+      <div className="backArrowDiv">
+        <BackArrowBtn />
+      </div>
       <div className="articleHead">
         <h3 className="articleTitles">
           The Last Chance Open is starting soon and it is going to be a HEROIC
