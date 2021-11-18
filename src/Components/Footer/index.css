@@ -16,9 +16,15 @@
 .listItemsFooter {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
-.followUs {
+.titleFollow {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.followUsFooter {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,43 +36,13 @@
   padding-top: 5px;
 }
 
-.logo {
+.logoFooter {
   display: flex;
   padding-top: 10px;
 }
 
-.btnContact {
-  border: none;
-  background-color: var(--secondary-color);
-  font: var(--font);
-  color: var(--main-color);
-  font-weight: bold;
-}
-
-.btnCgu {
-  border: none;
-  background-color: var(--secondary-color);
-  font: var(--font);
-  color: var(--main-color);
-  font-weight: bold;
-}
-
-.windowOpenContact {
-  color: white;
-  margin: auto;
-  margin-top: 10vh;
-  width: 300px;
-  height: 450px;
-  background-color: var(--main-color);
-}
-
-.windowOpenCgu {
-  color: white;
-  margin: auto;
-  margin-top: 10vh;
-  width: 300px;
-  height: 550px;
-  background-color: var(--main-color);
+.socialFooter {
+  margin: 5px;
 }
 
 .modalHeader {
@@ -76,7 +52,46 @@
   justify-content: center;
 }
 
-.closeModal {
+.btnContact,
+.btnAboutUs,
+.btnCgu {
+  padding-bottom: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  font: var(--font);
+  color: var(--main-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes show {
+  from {
+    transform: scale(0);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.windowOpenContact {
+  color: white;
+  margin: auto;
+  margin-top: 10vh;
+  width: 300px;
+  height: 450px;
+  background-color: var(--main-color);
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+  animation: show 0.5s;
+}
+
+.closeModalContact {
   position: relative;
   left: 90px;
 }
@@ -109,11 +124,119 @@
   text-align: center;
 }
 
+.windowOpenCgu {
+  color: white;
+  margin: auto;
+  margin-top: 10vh;
+  width: 500px;
+  height: 70vh;
+  text-align: justify;
+  background-color: var(--main-color);
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+  animation: show 0.5s;
+}
+
+.closeModalCgu {
+  position: relative;
+  left: 160px;
+}
+
+.windowOpenAboutUs {
+  color: white;
+  margin: auto;
+  margin-top: 3vh;
+  width: 85%;
+  height: 93vh;
+  background-color: var(--main-color);
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+  animation: show 0.5s;
+}
+
+.titleAboutUs {
+  font-size: 26px;
+}
+
+.modalHeaderAboutUs {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUsModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerDescription {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.textAboutUs {
+  margin-left: 18px;
+  margin-right: 40px;
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.descriptionAboutUs {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.profilAboutUs {
+  margin: 10px;
+  text-align: center;
+}
+
+.socialAboutUs {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+}
+
+.logoAboutUs {
+  margin-bottom: 5px;
+  height: 75px;
+  width: 75px;
+}
+
+.nameAboutUs {
+  margin-top: 5px;
+  color: var(--main-color);
+  font-family: bold;
+}
+
+.closeModalAboutUs {
+  position: relative;
+  left: 40%;
+}
+
 .contentsCgu {
   height: 57vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   margin-top: 15px;
   padding: 10px;
+}
+
+.groupPicture {
+  height: 50vh;
 }
 
 .titleArticle {
@@ -122,6 +245,12 @@
 
 .contentsArticle {
   padding-bottom: 8px;
+}
+
+.wilders {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 700px) {
@@ -141,5 +270,67 @@
     width: 40vh;
     height: 60vh;
     background-color: var(--main-color);
+  }
+
+  .windowOpenCgu {
+    color: white;
+    margin: auto;
+    margin-top: 10vh;
+    width: 300px;
+    height: 70vh;
+    text-align: justify;
+    background-color: var(--main-color);
+  }
+
+  .closeModalCgu {
+    position: relative;
+    left: 50px;
+  }
+
+  .windowOpenAboutUs {
+    color: white;
+    margin: auto;
+    margin-top: 3vh;
+    width: 85%;
+    height: 93vh;
+    background-color: var(--main-color);
+  }
+
+  .headerDescription {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .groupPicture {
+    height: 25vh;
+    width: 75vw;
+  }
+
+  .descriptionAboutUs {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .aboutUsModal {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    overflow-y: scroll;
+  }
+
+  .closeModalAboutUs {
+    position: relative;
+    left: 25%;
   }
 }

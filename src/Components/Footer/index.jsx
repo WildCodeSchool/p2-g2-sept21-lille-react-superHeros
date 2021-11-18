@@ -3,6 +3,14 @@ import Modal from 'react-modal';
 import Facebook from './Logo/Facebook.svg';
 import Insta from './Logo/Insta.svg';
 import Twitter from './Logo/Twitter.svg';
+import Group from './Photos/groupe.jpg';
+import Linkedin from './Photos/linckedin.png';
+import Github from './Photos/github.png';
+import Iron from './Photos/ironlogo.png';
+import Boubou from './Photos/boulogo.png';
+import Loki from './Photos/lokilogo.png';
+import Wonder from './Photos/wonderlogo.png';
+import Rocket from './Photos/rocketlogo.png';
 import './index.css';
 
 Modal.setAppElement('#root');
@@ -11,6 +19,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   const [contactModalIsOpen, setContactModalIsOpen] = useState(false);
   const [cguModalIsOpen, setCguModalIsOpen] = useState(false);
+  const [aboutUsModalIsOpen, setAboutUsModalIsOpen] = useState(false);
   return (
     <footer className="footerContact">
       <div className="footerContent">
@@ -31,7 +40,7 @@ function Footer() {
               <section className="modalHeader">
                 <h2 className="titleContact">Contact</h2>
                 <button
-                  className="closeModal"
+                  className="closeModalContact"
                   type="button"
                   onClick={() => setContactModalIsOpen(false)}
                 >
@@ -65,7 +74,7 @@ function Footer() {
               type="button"
               onClick={() => setCguModalIsOpen(true)}
             >
-              CGU
+              Terms of Use
             </button>
           </section>
           <Modal
@@ -74,9 +83,9 @@ function Footer() {
             className="windowOpenCgu"
           >
             <section className="modalHeader">
-              <h2 className="titleContact">CGU</h2>
+              <h2 className="titleContact">Terms of Use</h2>
               <button
-                className="closeModal"
+                className="closeModalCgu"
                 type="button"
                 onClick={() => setCguModalIsOpen(false)}
               >
@@ -223,19 +232,185 @@ function Footer() {
               </p>
             </section>
           </Modal>
+          <section className="aboutUs">
+            <button
+              className="btnAboutUs"
+              type="button"
+              onClick={() => setAboutUsModalIsOpen(true)}
+            >
+              About Us
+            </button>
+            <Modal
+              isOpen={aboutUsModalIsOpen}
+              onRequestClose={() => setAboutUsModalIsOpen(false)}
+              className="windowOpenAboutUs"
+            >
+              <section className="modalHeaderAboutUs">
+                <h2 className="titleAboutUs">About Us</h2>
+                <button
+                  className="closeModalAboutUs"
+                  type="button"
+                  onClick={() => setAboutUsModalIsOpen(false)}
+                >
+                  X
+                </button>
+              </section>
+              <div className="aboutUsModal">
+                <div className="headerDescription">
+                  <img src={Group} className="groupPicture" alt="logo" />
+                  <p className="textAboutUs">
+                    Coming from different backgrounds, this team is made of 5
+                    young developers. We wanted to share with you their passions
+                    for Super Heroes and collectible card games. Those passions
+                    are the reason why they have created this site for you, with
+                    your favorite Super Heroes, in the form of a collectible
+                    card.
+                    <br />
+                    Under development, this site will regularly have new cards
+                    added with new super heroes so stay tuned.
+                    <br /> You will find their contact details at the bottom of
+                    this page. Feel free to contact them and consult the other
+                    projects they are currently working on. We wish you a lovely
+                    visit on our website and as a wise man said “May the force
+                    be with you”.
+                  </p>
+                </div>
+                <section className="descriptionAboutUs">
+                  <div className="profilAboutUs">
+                    <img src={Rocket} className="logoAboutUs" alt="logo" />
+                    <p className="nameAboutUs">Guillaume Keerhem </p>
+                    <a
+                      href="https://github.com/KeerhemFR"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={Github} className="socialAboutUs " alt="logo" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/guillaume-keerhem"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={Linkedin}
+                        className="socialAboutUs "
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                  <div className="profilAboutUs">
+                    <img src={Iron} className="logoAboutUs" alt="logo" />
+                    <p className="nameAboutUs">Jérémy Vandomme</p>
+                    <a
+                      href="https://github.com/Vjerem"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={Github} className="socialAboutUs " alt="logo" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/jérémy-vandomme/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={Linkedin}
+                        className="socialAboutUs "
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                  <div className="profilAboutUs">
+                    <img src={Loki} className="logoAboutUs" alt="logo" />
+                    <p className="nameAboutUs">Romain Brehon</p>
+                    <a
+                      href="https://github.com/IrohsTea"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={Github} className="socialAboutUs " alt="logo" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/romain-brehon/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={Linkedin}
+                        className="socialAboutUs "
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                  <div className="profilAboutUs">
+                    <img src={Boubou} className="logoAboutUs" alt="logo" />
+                    <p className="nameAboutUs">Franck Depoorter</p>
+                    <a
+                      href="https://github.com/Franck59840"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={Github} className="socialAboutUs " alt="logo" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/franck-depoorter/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={Linkedin}
+                        className="socialAboutUs "
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                  <div className="profilAboutUs">
+                    <img src={Wonder} className="logoAboutUs" alt="logo" />
+                    <p className="nameAboutUs">Marion Grolleau</p>
+                    <a
+                      href="https://github.com/Mariion-62"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={Github} className="socialAboutUs " alt="logo" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/mariongrolleau/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={Linkedin}
+                        className="socialAboutUs "
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </Modal>
+          </section>
         </div>
-        <section className="followUs">
+        <section className="followUsFooter">
           <h3 className="titleFollow">Follow Us</h3>
-          <div className="logo">
-            <img src={Facebook} alt="Logo Facebook" />
-            <img src={Insta} alt="Logo Instagram" />
-            <img src={Twitter} alt="Logo Twitter" />
+          <div className="logoFooter">
+            <img className="socialFooter" src={Facebook} alt="Logo Facebook" />
+            <img className="socialFooter" src={Insta} alt="Logo Instagram" />
+            <img className="socialFooter" src={Twitter} alt="Logo Twitter" />
           </div>
         </section>
       </div>
       <h3 className="copyright">
         Copyright <span className="copyrightYear"> {currentYear} </span>
       </h3>
+      <a
+        className="wilders"
+        href="https://www.wildcodeschool.com/fr-FR"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Developed with heart by the Wilders ❤️
+      </a>
     </footer>
   );
 }
