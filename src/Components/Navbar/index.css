@@ -14,9 +14,12 @@
     width: 70px;
     height: 100vh;
     background-color: var(--secondary-color);
-    position: static;
-    z-index: 1;
+
+    position: sticky;
+    top: 0;
     transition: 400ms;
+    margin-bottom: -300px;
+
   }
 
   .menuLogo {
@@ -50,8 +53,10 @@
     justify-content: start;
     flex-direction: column;
     padding: 0;
-    position: static;
+    position: sticky;
+    top: 0;
     transition: 600ms;
+    margin-bottom: -300px;
   }
 
   .textShow {

@@ -8,6 +8,11 @@
   text-align: center;
 }
 
+.homeNews h3 {
+  font-size: 35px;
+  color: var(--main-color);
+}
+
 @media only screen and (min-width: 600px) {
   .homeNews {
     display: block;
