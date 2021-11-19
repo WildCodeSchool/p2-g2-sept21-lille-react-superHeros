@@ -44,7 +44,7 @@ function Rules() {
         equal, both players lose a Hit Points.
       </p>
       <h3 className="rulesTitles">End of the game.</h3>
-      <p className="rulesPara">
+      <p className="rulesPara lastPara">
         10. When a player’s Hit Points reach 0, the game ends.
       </p>
     </body>

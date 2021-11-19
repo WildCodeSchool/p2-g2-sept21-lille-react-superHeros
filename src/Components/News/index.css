@@ -7,6 +7,7 @@
     flex-flow: column;
     align-items: center;
     margin-bottom: 30px;
+    min-height: 100vh;
   }
 
   .articleBlocs {
@@ -143,6 +144,7 @@
   .articlePage {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
   }
 
   .articleBlocs {
