@@ -409,7 +409,7 @@ function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        Developed with heart by the Wilders ❤️
+        Developped with heart by the Wilders ❤️
       </a>
     </footer>
   );
