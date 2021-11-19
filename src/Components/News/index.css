@@ -185,6 +185,12 @@
     min-height: 100vh !important;
   }
 
+  .backArrowDiv {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .articleTitles {
     font-size: 24px;
   }
